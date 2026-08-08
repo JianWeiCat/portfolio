@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ResumeContent, { frontmatter } from '../content/resume/index.mdx';
+
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+const resumePreviewSrc = `${basePath}/images/resume-preview.png`;
 ---
 
 <BaseLayout title={frontmatter.title} description={frontmatter.description}>
@@ -14,7 +17,7 @@ import ResumeContent, { frontmatter } from '../content/resume/index.mdx';
 
       <figure class="resume-preview">
         <img
-          src="/images/resume-preview.png"
+          src={resumePreviewSrc}
           alt="张健伟的求职简历 PDF 预览"
           width="1190"
           height="1684"

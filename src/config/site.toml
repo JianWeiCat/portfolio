@@ -4,7 +4,7 @@ description = "记录计算机大学生在 AI 浪潮下的学习、实践与探�
 pageTitle = "张胖胖｜大模型与 Agent 开发"
 pageDescription = "张胖胖的个人网站，收录全栈实践、技术文章与独立项目。"
 url = "https://zhangpangpang.dev"
-repository = "https://github.com/JianWeiCat/portfolio"
+repository = "https://github.com/SanJin-09/brushPainting"
 footerNote = "© 2026 张胖胖。Built with Astro and Navfolio."
 
 [config.theme]
