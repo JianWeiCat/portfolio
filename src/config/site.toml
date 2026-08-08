@@ -129,10 +129,10 @@ subtitle = "全栈项目与独立实验"
 href = "/projects"
 
 [[config.home.navigation]]
-icon = "branch"
-title = "GitCat"
-subtitle = "跨平台 Git 增强工具箱"
-href = "/projects/gitcat"
+icon = "pen-tool"
+title = "工笔画批量重绘"
+subtitle = "AI 工笔画生成与编辑平台"
+href = "/projects/gongbi-batch-repaint"
 
 [[config.home.navigation]]
 icon = "pen"
