@@ -1,0 +1,189 @@
+[config.site]
+title = "张胖胖"
+description = "记录计算机大学生在 AI 浪潮下的学习、实践与探索。"
+pageTitle = "张胖胖｜大模型与 Agent 开发"
+pageDescription = "张胖胖的个人网站，收录全栈实践、技术文章与独立项目。"
+url = "https://zhangpangpang.dev"
+repository = "https://github.com/JianWeiCat/portfolio"
+footerNote = "© 2026 张胖胖。Built with Astro and Navfolio."
+
+[config.theme]
+# 可用色盘：green-soft、green-vivid、rose-soft、pink-soft、purple-soft、blue-soft、orange-soft、brown-soft
+palette = "blue-soft"
+lang = "zh-CN"
+
+[config.fonts]
+en = "Maple Mono"
+code = "Monaco"
+zh = "ChillRoundM"
+file = "/fonts/ChillRoundM.ttf"
+
+[config.code]
+lightTheme = "catppuccin-latte"
+darkTheme = "catppuccin-macchiato"
+lineNumbers = true
+wrap = true
+preserveIndent = true
+collapseStyle = "collapsible-auto"
+
+[config.math]
+render = "katex"
+
+[config.comments]
+enabled = false
+provider = "none"
+show_on_posts = true
+
+[config.search]
+enabled = true
+shortcut = "mod+k"
+placeholder = "搜索文章…"
+maxResults = 6
+
+[config.pages.blog]
+title = "文章"
+kicker = "学习笔记"
+subtitle = "全栈实践、AI 与 Agent 开发记录。"
+note = "记录学习路上的思考、踩坑和持续进行中的实验。"
+postsPerPage = 6
+dateFormat = "yyyy-MM-dd"
+metadataSeparator = "icon"
+coverImageStyle = "mask"
+
+[config.pages.blog.categories]
+title = "分类"
+kicker = "浏览文章"
+subtitle = ""
+note = "按主题整理的学习记录。"
+
+[config.pages.blog.series]
+title = "系列"
+kicker = "专题阅读"
+subtitle = ""
+note = "可以按顺序阅读的专题文章。"
+
+[config.pages.projects]
+title = "项目"
+kicker = "作品集"
+subtitle = "全栈应用、工具与探索性实验。"
+note = "从想法到实现，记录值得复盘的项目与技术选择。"
+
+[config.profile]
+name = "张胖胖"
+handle = "@zhangpangpang"
+role = "全栈工程师 · NUIST 计软院在读大学生"
+email = "zhangjianwei675@foxmail.com"
+website = "https://zhangpangpang.dev"
+github = "https://github.com/JianWeiCat"
+avatar = "/images/avatar.jpg"
+
+[[config.topNav.links]]
+label = "首页"
+href = "/"
+
+[[config.topNav.links]]
+label = "文章"
+href = "/blog"
+
+[[config.topNav.links]]
+label = "项目"
+module = "projects"
+
+[[config.topNav.links]]
+label = "简历"
+href = "/resume"
+
+[[config.topNav.links]]
+label = "关于"
+href = "/about"
+
+[config.home.quote]
+text = [
+  "开放，",
+  "学习，",
+  "交流。",
+]
+
+[config.home.intro]
+title = "你好，我是张胖胖"
+name = "张胖胖"
+body = [
+  "我是一个喜欢瞎捣鼓的计算机大学生，目前就读于 NUIST 计算机学院,软件学院。",
+  "什么都懂一点，什么都还在学习；我喜欢把想法做成能运行的全(la)栈(ji)项目，也喜欢猫咪。",
+  "这里记录我的项目、文章，以及关于大模型和 Agent 的持续实验。",
+]
+
+[config.home.latest]
+count = 3
+heatmapWeeks = 24
+# 暂时隐藏热力图中的最新文章列表；后续可改为 true。
+showHeatmapLatest = false
+excludeDraft = true
+startDate = ""
+dateArchiveBaseHref = ""
+
+[[config.home.navigation]]
+icon = "briefcase"
+title = "作品集"
+subtitle = "全栈项目与独立实验"
+href = "/projects"
+
+[[config.home.navigation]]
+icon = "branch"
+title = "GitCat"
+subtitle = "跨平台 Git 增强工具箱"
+href = "/projects/gitcat"
+
+[[config.home.navigation]]
+icon = "pen"
+title = "文章"
+subtitle = "全栈、AI 与开发笔记"
+href = "/blog"
+
+[[config.home.navigation]]
+icon = "book"
+title = "关于我"
+subtitle = "经历、技能与合作方式"
+href = "/about"
+
+[[config.home.navigation]]
+icon = "briefcase"
+title = "简历"
+subtitle = "教育背景与技术能力"
+href = "/resume"
+
+[[config.home.navigation]]
+icon = "github"
+title = "GitHub"
+subtitle = "开源代码与实验"
+href = "https://github.com/JianWeiCat"
+
+[[config.home.links]]
+label = "GitHub"
+icon = "github"
+tooltip = "https://github.com/JianWeiCat"
+copy = false
+
+[[config.home.links]]
+label = "Email"
+icon = "mail"
+tooltip = "zhangjianwei675@foxmail.com"
+copy = true
+
+[[config.home.links]]
+label = "WeChat"
+icon = "wechat"
+tooltip = "18123063363"
+copy = true
+
+[[config.home.doing]]
+text = "物联网平台全栈开发（国产化进行中）"
+mark = "01"
+
+[[config.home.doing]]
+text = "Git 可视化图形操作平台开发（Demo）"
+mark = "02"
+
+[[config.home.doing]]
+text = "工笔画模型微调（半路接手,学习中）"
+mark = "03"

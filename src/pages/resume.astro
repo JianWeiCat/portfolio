@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResumeContent, { frontmatter } from '../content/resume/index.mdx';
+---
+
+<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+  <main id="main-content" class="resume-page">
+    <article class="resume-sheet">
+      <header class="resume-hero">
+        <p class="resume-kicker">RESUME · 2026</p>
+        <h1>{frontmatter.title}</h1>
+        <p>{frontmatter.description}</p>
+      </header>
+
+      <figure class="resume-preview">
+        <img
+          src="/images/resume-preview.png"
+          alt="张健伟的求职简历 PDF 预览"
+          width="1190"
+          height="1684"
+        />
+        <figcaption>求职简历 PDF 预览，以下为便于浏览和搜索的网页版本。</figcaption>
+      </figure>
+
+      <div class="resume-content">
+        <ResumeContent />
+      </div>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .resume-page {
+    width: min(100% - 32px, 920px);
+    padding: 120px 0 72px;
+    margin: 0 auto;
+  }
+
+  .resume-sheet {
+    overflow: hidden;
+    border: 1px solid var(--paper-line);
+    border-radius: 12px;
+    background: var(--paper-surface);
+    box-shadow: var(--paper-shadow);
+  }
+
+  .resume-hero {
+    padding: clamp(28px, 6vw, 64px);
+    border-bottom: 1px solid var(--paper-line);
+    background: color-mix(in srgb, var(--paper-control) 55%, transparent);
+  }
+
+  .resume-kicker {
+    margin: 0 0 12px;
+    color: var(--paper-accent);
+    font-family: var(--font-ui-label);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .resume-hero h1 {
+    margin: 0;
+    color: var(--paper-ink);
+    font-size: clamp(2.25rem, 6vw, 4.2rem);
+    line-height: 1;
+  }
+
+  .resume-hero > p:last-child {
+    max-width: 62ch;
+    margin: 18px 0 0;
+    color: var(--paper-ink-soft);
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+
+  .resume-content {
+    display: grid;
+    gap: 36px;
+    padding: clamp(28px, 6vw, 64px);
+    color: var(--paper-ink);
+    line-height: 1.8;
+  }
+
+  .resume-preview {
+    width: min(100% - 48px, 760px);
+    margin: clamp(28px, 5vw, 56px) auto 0;
+  }
+
+  .resume-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--paper-line);
+    border-radius: 8px;
+    box-shadow: var(--paper-shadow);
+  }
+
+  .resume-preview figcaption {
+    margin-top: 10px;
+    color: var(--paper-ink-faint);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    text-align: center;
+  }
+
+  .resume-content :global(h2) {
+    margin: 24px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--paper-line);
+    color: var(--paper-ink);
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  .resume-content :global(h2:first-child) {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .resume-content :global(h3) {
+    margin: 20px 0 6px;
+    color: var(--paper-ink);
+    font-size: 1.04rem;
+    line-height: 1.4;
+  }
+
+  .resume-content :global(p) {
+    max-width: 70ch;
+    margin: 0 0 12px;
+  }
+
+  .resume-content :global(ul) {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding-left: 1.3em;
+  }
+
+  .resume-content :global(li::marker) {
+    color: var(--paper-accent);
+  }
+
+  .resume-content :global(a) {
+    color: var(--paper-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .resume-content :global(strong) {
+    color: var(--paper-ink);
+  }
+
+  @media (max-width: 640px) {
+    .resume-page {
+      width: min(100% - 20px, 920px);
+      padding: 88px 0 40px;
+    }
+
+    .resume-sheet {
+      border-radius: 9px;
+    }
+
+    .resume-content {
+      gap: 28px;
+    }
+
+    .resume-preview {
+      width: min(100% - 32px, 760px);
+    }
+  }
+</style>
