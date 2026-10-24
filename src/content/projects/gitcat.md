@@ -1,7 +1,7 @@
 ---
 title: "GitCat"
 description: "纯 Rust + Tauri 2 跨平台 Git 仓库增强桌面工具箱，提供安全、高效的图形化 Git 管理体验。"
-date: "2026-07-01"
+date: "2026-07-16"
 draft: false
 showHeroImage: false
 tags:
@@ -21,7 +21,7 @@ authors:
   - name: "张胖胖"
 links:
   - label: "GitHub 源码"
-    href: "https://github.com/JianWeiCat/Git-Helper"
+    href: "https://github.com/JianWeiCat/GitCat"
     kind: "github"
 ---
 
@@ -30,7 +30,7 @@ GitCat 是“Git 可视化图形操作平台”的正式项目名称。它是一
 ## 项目概览
 
 - 项目状态：开发中
-- 开始时间：2026 年 7 月
+- 仓库创建：2026 年 7 月 16 日
 - 项目类型：开发者工具
 - 目标用户：需要频繁管理多个 Git 仓库的开发者。
 
